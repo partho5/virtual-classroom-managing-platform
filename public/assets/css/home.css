@@ -1,0 +1,180 @@
+
+
+
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+    /*font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    //color: #232525;
+    padding-top: 1px;
+}
+.container-fluid{
+    padding: 0px;
+    margin: 0px auto;
+}
+
+#slides {
+    display: none;
+    height: auto;
+}
+#slides .slidesjs-navigation {
+    margin-top:3px;
+}
+
+#slides .slidesjs-previous {
+    margin-right: 5px;
+    float: left;
+}
+
+#slides .slidesjs-next {
+    margin-right: 5px;
+    float: left;
+}
+
+.slidesjs-pagination {
+    margin: 6px 0 0;
+    float: right;
+    list-style: none;
+}
+
+.slidesjs-pagination li {
+    float: left;
+    margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+    display: block;
+    width: 13px;
+    height: 0;
+    padding-top: 13px;
+    background-position: 0 0;
+    float: left;
+    overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+    background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+    background-position: 0 -26px
+}
+
+#slides a:link,
+#slides a:visited {
+    color: #333
+}
+
+#slides a:hover,
+#slides a:active {
+    color: #9e2020
+}
+
+.navbar {
+    overflow: hidden
+}
+
+
+
+
+
+/* >>>> --------Responsive---------------*/
+
+#slides {
+    display: none
+}
+
+.container {
+    margin: 0 auto
+}
+
+/* For tablets & smart phones */
+@media (max-width: 767px) {
+    body {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .container {
+        width: auto
+    }
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+    .container {
+        width: auto
+    }
+}
+
+/* For smaller displays like laptops */
+@media (min-width: 768px) and (max-width: 979px) {
+    .container {
+        width: 724px
+    }
+}
+
+/* For larger displays */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px
+    }
+}
+
+/* <<<<<< --------Responsive---------------*/
+
+
+#slides{
+    position: relative;
+}
+#row0{
+    position: absolute;
+    background: transparent;
+    top: 10%;
+    left: 10%;
+    z-index: 10;
+    color: rgba(255, 255, 255, 0.95);
+}
+#row1{
+    padding: 8vh 0vh;
+    background-color: rgb(229, 229, 229);
+    color: #000;
+    font-size: 18px;
+}
+#row0 h1{
+    font-size: 5vh;
+}
+#row1 #intro1{
+    //background-color: rgba(39, 169, 116, 0.4);
+}
+#row1 h3{
+    color: rgba(194, 84, 0, 0.97);
+}
+
+#row2{
+    padding: 8vh 0vh;
+    background-color: rgba(7,139,181,0.8);
+    font-size: 18px;
+}
+#row2 h3{
+    color: #000;
+}
+#row2 .box{
+    color: rgba(238, 238, 238, 0.95);
+}
+#row3{
+    padding: 8vh 0vh;
+    background-color: rgba(190, 79, 0, 0.85);
+    font-size: 20px;
+}
+#row3 h3{
+    color: #fff;
+}
+#row3 .box{
+    color: rgba(238, 238, 238, 0.95);
+}
+#row4{
+    background-color: rgba(17, 17, 17, 0.92);
+    color: rgba(238, 238, 238, 0.95);
+}

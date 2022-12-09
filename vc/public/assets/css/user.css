@@ -1,0 +1,39 @@
+
+
+.container-fluid, #events-wrapper, #events{
+    padding: 0px;
+    margin: 0px auto;
+}
+#events-wrapper{
+    background-color: rgba(191, 191, 191, 0.16);
+    padding: 4vh;
+}
+h2{
+    color: #292929;
+    font-family: Raleway;
+    font-style: italic;
+    text-shadow: 2px 1px #9f9f9f;
+}
+.single-event{
+    background-color: rgba(255, 255, 255, 0.81);
+    border: 1px solid #b5b5b5;
+    margin-bottom: 20px;
+}
+.single-event h4 a{
+    color: #be3300;
+    font-family: Raleway, sans-serif;
+}
+.event-action-wrapper{
+    padding-bottom: 5px;
+}
+.event-wrapper{
+    background-color: rgba(0, 0, 240, 0.05);
+    border: 1px solid rgba(0, 0, 181, 0.29);
+    margin-bottom: 7px;
+    padding: 5px 0px;
+}
+#past-events2 .event-wrapper{
+    background-color: rgba(218, 187, 0, 0.15);
+    margin-top: 3px;
+    padding: 5px 0px;
+}

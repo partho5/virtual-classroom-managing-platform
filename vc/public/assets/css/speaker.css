@@ -1,0 +1,175 @@
+
+
+body{
+    background-color: rgba(191, 191, 191, 0.16);
+    font-family: Raleway, serif;
+}
+
+.container-fluid{
+    padding: 0px;
+    margin: 0px auto;
+}
+#left-bar{
+    margin-top: 25px;
+    background-color: #384e65;
+    color: #fff;
+}
+#links .link{
+    padding: 5px 10px;
+    background-color: #405a74;
+}
+.link a{
+    color: #dfdfdf;
+    text-decoration: none;
+}
+#links .link:hover{
+    background-color: #2f4255;
+}
+#invite-link{
+    cursor: pointer;
+}
+#middle-bar #invite{
+    border-bottom: 2px solid rgba(102, 102, 102, 0.73);
+    opacity: 0;
+    height: 0px;
+    display: none;
+}
+.event:hover{
+    box-shadow: 2px 2px rgba(191, 191, 191, 0.68);
+    background-color: #fff;
+    color: #000;
+}
+#right-bar #event-wrapper span{
+    padding: 2px 15px;
+}
+.event{
+    background-color: #fcfcfc;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(168, 168, 168, 0.68);
+    border-radius: 5px;
+}
+.event-title a{
+    color: #b23d00;
+}
+.other-event a{
+    color: rgba(0, 0, 224, 0.72);
+}
+.text-info{
+    background-color: #1b6d85;
+    color: rgba(255, 255, 255, 0.89);
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+#events{
+    padding: 0px;
+    margin: 0px auto;
+}
+#events-wrapper{
+    background-color: rgba(191, 191, 191, 0.16);
+    padding: 4vh;
+}
+h2{
+    color: #292929;
+    font-family: Raleway;
+    font-style: italic;
+    text-shadow: 2px 1px #9f9f9f;
+}
+.single-event{
+    background-color: rgba(255, 255, 255, 0.81);
+    border: 1px solid #b5b5b5;
+    margin-bottom: 20px;
+}
+.single-event h4 a{
+    color: #be3300;
+    font-family: Raleway, sans-serif;
+}
+.event-action-wrapper{
+    padding-bottom: 5px;
+}
+.event-wrapper{
+    background-color: rgba(0, 0, 240, 0.05);
+    border: 1px solid rgba(0, 0, 181, 0.29);
+    margin-bottom: 7px;
+    padding: 5px 0px;
+}
+
+
+
+
+
+
+
+
+/* >>>>--------------Event Creation-------------*/
+
+.pop-up {
+    position: relative;
+    /*border: 1px solid #000000;*/
+
+}
+.pop-up-dir {
+    visibility: visible;
+    position: absolute;
+    overflow: hidden;
+    top: 100%;
+    padding-left: 3vh;
+    padding-top: 0;
+    z-index: 1001;
+    width: 100%;
+    /*border: 1px solid #ea5a00;*/
+}
+
+.bg {
+    padding-top: 0;
+    background-color: #e1e1e1;
+}
+
+.suggestion {
+    background-color: #b7b7b7;
+    padding: 0;
+}
+.speaker-name {
+    font-size: 18px;
+    padding-left: 10px;
+    color: #3d3d3d;
+}
+.speaker-univ {
+    font-size: 15px;
+    padding-left: 10px;
+    color: #545454;
+}
+#speaker-suggestion-wrapper{
+    display: none;
+}
+
+/* <<<<--------------Event Creation-------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

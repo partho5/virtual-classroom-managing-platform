@@ -1,0 +1,36 @@
++--------+-----------+------------------------------------------+------------------+------------------------------------------------------------------------+--------------+
+| Domain | Method    | URI                                      | Name             | Action                                                                 | Middleware   |
++--------+-----------+------------------------------------------+------------------+------------------------------------------------------------------------+--------------+
+|        | GET|HEAD  | /                                        |                  | Closure                                                                | web          |
+|        | GET|HEAD  | api/user                                 |                  | Closure                                                                | api,auth:api |
+|        | POST      | event                                    | event.store      | App\Http\Controllers\EventsController@store                            | web,auth     |
+|        | GET|HEAD  | event                                    | event.index      | App\Http\Controllers\EventsController@index                            | web,auth     |
+|        | GET|HEAD  | event/create                             | event.create     | App\Http\Controllers\EventsController@create                           | web,auth     |
+|        | DELETE    | event/{event}                            | event.destroy    | App\Http\Controllers\EventsController@destroy                          | web,auth     |
+|        | PUT|PATCH | event/{event}                            | event.update     | App\Http\Controllers\EventsController@update                           | web,auth     |
+|        | GET|HEAD  | event/{event}                            | event.show       | App\Http\Controllers\EventsController@show                             | web,auth     |
+|        | GET|HEAD  | event/{event}/edit                       | event.edit       | App\Http\Controllers\EventsController@edit                             | web,auth     |
+|        | GET|HEAD  | home                                     | home             | App\Http\Controllers\HomeController@index                              | web,auth     |
+|        | GET|HEAD  | invitation/respond_to_invitation/{token} |                  | App\Http\Controllers\UserController@respondToInvitation                | web,auth     |
+|        | POST      | login                                    |                  | App\Http\Controllers\Auth\LoginController@login                        | web,guest    |
+|        | GET|HEAD  | login                                    | login            | App\Http\Controllers\Auth\LoginController@showLoginForm                | web,guest    |
+|        | POST      | logout                                   | logout           | App\Http\Controllers\Auth\LoginController@logout                       | web          |
+|        | POST      | password/email                           | password.email   | App\Http\Controllers\Auth\ForgotPasswordController@sendResetLinkEmail  | web,guest    |
+|        | POST      | password/reset                           |                  | App\Http\Controllers\Auth\ResetPasswordController@reset                | web,guest    |
+|        | GET|HEAD  | password/reset                           | password.request | App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm | web,guest    |
+|        | GET|HEAD  | password/reset/{token}                   | password.reset   | App\Http\Controllers\Auth\ResetPasswordController@showResetForm        | web,guest    |
+|        | POST      | register                                 |                  | App\Http\Controllers\Auth\RegisterController@register                  | web,guest    |
+|        | GET|HEAD  | register                                 | register         | App\Http\Controllers\Auth\RegisterController@showRegistrationForm      | web,guest    |
+|        | GET|HEAD  | representative                           |                  | App\Http\Controllers\RepresentativeController@index                    | web,auth     |
+|        | GET|HEAD  | speaker                                  |                  | App\Http\Controllers\SpeakerController@index                           | web,auth     |
+|        | GET|HEAD  | super                                    |                  | App\Http\Controllers\SuperAdminController@index                        | web,auth     |
+|        | POST      | super/invite_to_come_in_role             |                  | App\Http\Controllers\SuperAdminController@inviteToComeInRole           | web,auth     |
+|        | GET|HEAD  | user/board                               |                  | App\Http\Controllers\UserController@index                              | web,auth     |
+|        | GET|HEAD  | user/profile                             | profile.index    | App\Http\Controllers\ProfileController@index                           | web,auth     |
+|        | POST      | user/profile                             | profile.store    | App\Http\Controllers\ProfileController@store                           | web,auth     |
+|        | GET|HEAD  | user/profile/create                      | profile.create   | App\Http\Controllers\ProfileController@create                          | web,auth     |
+|        | DELETE    | user/profile/{profile}                   | profile.destroy  | App\Http\Controllers\ProfileController@destroy                         | web,auth     |
+|        | PUT|PATCH | user/profile/{profile}                   | profile.update   | App\Http\Controllers\ProfileController@update                          | web,auth     |
+|        | GET|HEAD  | user/profile/{profile}                   | profile.show     | App\Http\Controllers\ProfileController@show                            | web,auth     |
+|        | GET|HEAD  | user/profile/{profile}/edit              | profile.edit     | App\Http\Controllers\ProfileController@edit                            | web,auth     |
++--------+-----------+------------------------------------------+------------------+------------------------------------------------------------------------+--------------+
